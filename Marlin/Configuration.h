@@ -1052,7 +1052,7 @@
 //#define USE_WMAX_PLUG
 
 // Enable pullup for all endstops to prevent a floating state
-#define ENDSTOPPULLUPS
+// #define ENDSTOPPULLUPS
 #if DISABLED(ENDSTOPPULLUPS)
   // Disable ENDSTOPPULLUPS to set pullups individually
   //#define ENDSTOPPULLUP_XMIN
@@ -1077,7 +1077,7 @@
 #endif
 
 // Enable pulldown for all endstops to prevent a floating state
-//#define ENDSTOPPULLDOWNS
+#define ENDSTOPPULLDOWNS
 #if DISABLED(ENDSTOPPULLDOWNS)
   // Disable ENDSTOPPULLDOWNS to set pulldowns individually
   //#define ENDSTOPPULLDOWN_XMIN
@@ -1640,9 +1640,9 @@
 // @section motion
 
 // Invert the stepper direction. Change (or reverse the motor connector) if an axis goes the wrong way.
-#define INVERT_X_DIR false
-#define INVERT_Y_DIR true
-#define INVERT_Z_DIR false
+#define INVERT_X_DIR true
+#define INVERT_Y_DIR false
+#define INVERT_Z_DIR true
 //#define INVERT_I_DIR false
 //#define INVERT_J_DIR false
 //#define INVERT_K_DIR false
@@ -3172,15 +3172,15 @@
   #define BUTTON_DELAY_MENU     250 // (ms) Button repeat delay for menus
 
   //#define DISABLE_ENCODER         // Disable the click encoder, if any
-  //#define TOUCH_IDLE_SLEEP_MINS 5 // (minutes) Display Sleep after a period of inactivity. Set with M255 S.
+  #define TOUCH_IDLE_SLEEP_MINS 5 // (minutes) Display Sleep after a period of inactivity. Set with M255 S.
 
-  #define TOUCH_SCREEN_CALIBRATION
+  //#define TOUCH_SCREEN_CALIBRATION
 
-  //#define TOUCH_CALIBRATION_X 12316
-  //#define TOUCH_CALIBRATION_Y -8981
-  //#define TOUCH_OFFSET_X        -43
-  //#define TOUCH_OFFSET_Y        257
-  //#define TOUCH_ORIENTATION TOUCH_LANDSCAPE
+  #define TOUCH_CALIBRATION_X   16976
+  #define TOUCH_CALIBRATION_Y   -11527
+  #define TOUCH_OFFSET_X        -28
+  #define TOUCH_OFFSET_Y        339
+  #define TOUCH_ORIENTATION     TOUCH_LANDSCAPE
 
   #if BOTH(TOUCH_SCREEN_CALIBRATION, EEPROM_SETTINGS)
     #define TOUCH_CALIBRATION_AUTO_SAVE // Auto save successful calibration values to EEPROM
