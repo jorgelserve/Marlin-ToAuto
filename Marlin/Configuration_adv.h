@@ -838,7 +838,7 @@
 
   //#define Z_MULTI_ENDSTOPS          // Other Z axes have their own endstops
   #if ENABLED(Z_MULTI_ENDSTOPS)
-    #define Z2_USE_ENDSTOP   USE_ZMAX_PLUG   // Z2 endstop board plug. Don't forget to enable USE_*_PLUG.
+    #define Z2_USE_ENDSTOP   _XMAX_   // Z2 endstop board plug. Don't forget to enable USE_*_PLUG.
     #define Z2_ENDSTOP_ADJUSTMENT 0   // Z2 offset relative to Z endstop
   #endif
   #ifdef Z3_DRIVER_TYPE
@@ -2440,7 +2440,7 @@
  * Currently handles M108, M112, M410, M876
  * NOTE: Not yet implemented for all platforms.
  */
-//#define EMERGENCY_PARSER
+#define EMERGENCY_PARSER
 
 /**
  * Realtime Reporting (requires EMERGENCY_PARSER)
