@@ -1,7 +1,5 @@
 name: Build
 
-# on: [push, pull_request]
-
 on:
   push:
     branches:
@@ -22,7 +20,9 @@ jobs:
           path: |
             ~/.cache/pip
             ~/.platformio/.cache
-          key: ${{ runner.os }}-pio
+          key: ${{ runner.os }}-platformio-${{ hashFiles('Marlin/config.ini') }}
+          restore-keys: |
+            ${{ runner.os }}-platformio-
       - name: Set up Python
         uses: actions/setup-python@v4
         with:
