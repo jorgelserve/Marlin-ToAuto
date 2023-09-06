@@ -78,5 +78,14 @@ default_envs = mks_robin_nano_v1v2
 ```ini
 monitor_speed     = 115200
 ```
+---
+### Hardware settings
+
+|	Axis    |	X		|	Y		|	Z1		|	E0		|	Z2		|
+|	---		|	---		|	---		|	---		|	---		|	---		|
+|	Current |	1		|   1		|	0.8		|	0.8		|	0.8		|
+|	Driver  |	TCM2208	|	TCM2208	|	A4988	|	A4988	|	A4988	|
+|	Vref	|	1		|	1		|	?		|	?		|	?		|
+
 
 Autor: [@jorgelserve](https://github.com/jorgelserve)
