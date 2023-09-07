@@ -139,7 +139,14 @@
 
 // Printer's unique ID, used by some programs to differentiate between machines.
 // Choose your own or use a service like https://www.uuidgenerator.net/version4
-#define MACHINE_UUID "f5a01cbc-dd47-4317-a040-112cc56c4aae"
+#define MACHINE_UUID "f5a01cbc-dd47-4317-a040-112cc56c4aae" // Pyramid #1
+//#define MACHINE_UUID "f70e2ec9-c682-484e-851c-0e9d6fd05f92" // Pyramid #2
+//#define MACHINE_UUID "85338227-9a7d-42df-9093-b0af18eb9e86" // Pyramid #3
+//#define MACHINE_UUID "01c60031-3749-4aa8-a4e2-d40a886640c7" // Pyramid #4
+//#define MACHINE_UUID "e154772d-11f2-4ad3-8afc-21d38be2a571" // Pyramid #5
+//#define MACHINE_UUID "0639fd32-2ba3-475d-952a-91af9b05d096" // Pyramid #6
+//#define MACHINE_UUID "cce98eca-99f2-47cb-9c70-2c1773f9c873" // Pyramid #7
+//#define MACHINE_UUID "13a48ca3-f3db-4fbc-9fdb-fb2fccfe031f" // Pyramid #8
 
 // @section stepper drivers
 
