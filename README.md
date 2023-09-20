@@ -1,3 +1,4 @@
+[![Build](https://github.com/jorgelserve/Marlin-ToAuto/actions/workflows/build.yaml/badge.svg?branch=dev)](https://github.com/jorgelserve/Marlin-ToAuto/actions/workflows/build.yaml)
 # Firmware Marlin para Artillery A1.1 de ToAuto
 
 Este proyecto contiene las configuraciones necesarias para el firmware [Marlin 2.1.2.1](https://github.com/MarlinFirmware/Marlin/releases/tag/2.1.2.1) para las impresoras Artillery A1.1 de ToAuto
